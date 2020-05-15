@@ -29,6 +29,10 @@ yarn build
 ipfs add -r build
 ```
 
+### Comments to minimal example
+- `src/index.tsx` - Added `SafeProvider`
+- `src/App.tsx` - Use `useSafe` to access Safe information
+
 ### Notes: How to setup a Safe app from scratch
 
 Create Safe app with typescript support using yarn as a package manager.

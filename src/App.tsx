@@ -1,13 +1,11 @@
 
-import React, { useState } from 'react'
-import buildServices from './utils/services'
+import React from 'react'
 import './App.css'
-import Dashboard from './components/Dashboard'
 import { useSafe } from './utils/SafeProvider'
 
 const App = () => {
-  const [services] = useState(buildServices(useSafe()));
-  return <Dashboard services={services} />
+  const safe = useSafe()
+  return (<div>{safe.getSafeInfo().safeAddress}</div>)
 }
 
 export default App
